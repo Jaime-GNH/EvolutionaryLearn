@@ -5,12 +5,12 @@ Evolution Strategies and genetic algorithms for hyperparameter tunning.
 ## 1. Use
 
 Some usages are shown in [examples](examples).
-1. Classification problem with sklearn common models: [classifier_usage](examples/classifier_usage.py)
-2. Regression problem with sklearn common models: [regression_usage](examples/regression_usage.py)
+1. Classification problem with sklearn common models: [classifier_usage](examples/hp_optimizer/classifier_usage.py)
+2. Regression problem with sklearn common models: [regression_usage](examples/hp_optimizer/regression_usage.py)
 3. [ ] torch.nn.Module tunning.
 4. [ ] tf.Keras.Model tunning.
 
-The common usage is done subclassing the [`EvolutionaryOptimizer` class](evolutionary_learn/evolutionary_hp_optimizer.py)
+The common usage is done subclassing the [`EvolutionaryOptimizer` class](evolutionary_learn/hp_optimizer.py)
 and adding a `score_individual` function.
 
 ```python
@@ -52,7 +52,7 @@ fittest_model = MyEvolStrat(...)()
 ## 2. Evolution Strategies
 
 There are multiple evolution strategies inside the global class
-[`EvolutionaryOptimizer`](evolutionary_learn/evolutionary_hp_optimizer.py).
+[`EvolutionaryOptimizer`](evolutionary_learn/hp_optimizer.py).
 
 Let's see some of them.
 
